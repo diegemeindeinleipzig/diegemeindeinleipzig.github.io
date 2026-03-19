@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&Uuml;ber uns – Die Gemeinde in Leipzig</title>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Source Sans 3', sans-serif; color: #333; background: #fafaf8; line-height: 1.8; font-size: 16px; }
+
+        nav { background: #fafaf8; padding: 0 2rem; border-bottom: 1px solid #e8e6e1; }
+        .nav-inner { max-width: 740px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; height: 60px; }
+        .nav-logo { font-family: 'Source Serif 4', serif; font-size: 1.1rem; color: #333; text-decoration: none; font-weight: 600; }
+        .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+        .nav-links a { text-decoration: none; color: #888; font-size: 0.9rem; transition: color 0.2s; }
+        .nav-links a:hover { color: #333; }
+        .nav-links a.active { color: #333; }
+        .hamburger { display: none; flex-direction: column; gap: 4px; cursor: pointer; background: none; border: none; }
+        .hamburger span { width: 20px; height: 1.5px; background: #333; }
+
+        .page-header { max-width: 740px; margin: 0 auto; padding: 4rem 2rem 2rem; }
+        .page-header h1 { font-family: 'Source Serif 4', serif; font-size: 2.2rem; font-weight: 600; color: #222; margin-bottom: 0.5rem; line-height: 1.3; }
+
+        .divider { border: none; border-top: 1px solid #e8e6e1; margin: 0 auto; max-width: 740px; }
+
+        section { max-width: 740px; margin: 0 auto; padding: 2.5rem 2rem; }
+        h2 { font-family: 'Source Serif 4', serif; font-size: 1.5rem; color: #222; margin-bottom: 1rem; font-weight: 600; }
+        p { margin-bottom: 1rem; color: #444; }
+        p:last-child { margin-bottom: 0; }
+        ul { margin: 1rem 0; padding-left: 1.5rem; color: #444; }
+        li { margin-bottom: 0.5rem; }
+
+        .verse-inline { font-style: italic; color: #666; border-left: 2px solid #ccc; padding-left: 1rem; margin: 1.5rem 0; }
+        .verse-ref { font-style: normal; color: #999; font-size: 0.85rem; }
+
+        footer { text-align: center; padding: 3rem 2rem; font-size: 0.8rem; color: #aaa; }
+        footer a { color: #888; text-decoration: none; }
+
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
+            .nav-links { display: none; position: absolute; top: 60px; left: 0; right: 0; background: #fafaf8; flex-direction: column; padding: 1rem 2rem; border-bottom: 1px solid #e8e6e1; z-index: 100; }
+            .nav-links.open { display: flex; }
+            .page-header h1 { font-size: 1.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="nav-inner">
+        <a class="nav-logo" href="index.html">Die Gemeinde in Leipzig</a>
+        <button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="glaubensbekenntnis.html">Glaubensbekenntnis</a></li>
+            <li><a href="ueber-uns.html" class="active">&Uuml;ber uns</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="page-header">
+    <h1>&Uuml;ber uns</h1>
+</div>
+
+<hr class="divider">
+
+<section>
+    <h2>Unser Name und unsere Stellung</h2>
+    <p>&bdquo;Die Gemeinde in Leipzig&ldquo; ist keine offizielle Bezeichnung, sondern eine Beschreibung. Wir hei&szlig;en alle Gl&auml;ubigen an Jesus Christus willkommen und folgen dem Vorbild des Neuen Testaments. Unser Fundament ist die Heilige Schrift &ndash; nicht irgendeine traditionelle Auslegung, sondern das reine Wort Gottes.</p>
+    <p>Wir verstehen uns weder als Sekte noch als Denomination, sondern als in Christus vereint als der eine Leib der Gemeinde in der Stadt.</p>
+</section>
+
+<hr class="divider">
+
+<section>
+    <h2>Unsere Mission und Praxis</h2>
+    <p>Die Gemeinde konzentriert sich auf:</p>
+    <ul>
+        <li>Das Evangelium den S&uuml;ndern zu verk&uuml;ndigen zur Errettung</li>
+        <li>Christus den Gl&auml;ubigen darzustellen, damit sie geistlich wachsen</li>
+        <li>Die biblische Wahrheit und das normale Gemeindeleben wiederzuerlangen, das &uuml;ber die Jahrhunderte verloren ging</li>
+        <li>Die Gemeinde als den Leib Christi aufzubauen in Vorbereitung auf seine Wiederkehr</li>
+    </ul>
+</section>
+
+<hr class="divider">
+
+<section>
+    <h2>Unser Gemeindeleben</h2>
+    <p>Wir betonen w&ouml;chentliche Gemeindeversammlungen, Haustreffen, Gebetsversammlungen und kleine Bibelstudiengruppen.</p>
+    <p class="verse-inline">&laquo;...v&ouml;llig gest&auml;rkt zu werden... um zu erfassen, was die Breite und L&auml;nge und H&ouml;he und Tiefe ist, und die die Erkenntnis &uuml;bersteigende Liebe Christi zu erkennen.&raquo;<br><span class="verse-ref">Epheser 3:18-19</span></p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Die Gemeinde in Leipzig &middot; <a href="index.html">Startseite</a> &middot; <a href="glaubensbekenntnis.html">Glaubensbekenntnis</a></p>
+</footer>
+
+</body>
+</html>
